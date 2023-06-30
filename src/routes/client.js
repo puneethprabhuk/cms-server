@@ -8,7 +8,7 @@ import {
     addTransaction, 
     updateTransaction, 
     deleteTransaction, 
-    getTrx, 
+    getTransaction, 
 } from '../controllers/client.js'
 import auth from '../middleware/auth.js';
 
@@ -16,7 +16,7 @@ import auth from '../middleware/auth.js';
 
 const clientRouter = express.Router();
 
-clientRouter.get('/transactions', auth, getTrx);
+clientRouter.get('/transactions', auth, getTransaction);
 
 clientRouter.get('/:id', auth, getClient);
 

@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "mongoose": "^6.0.13"
   },
   "devDependencies": {
+    "nodemon": "^2.0.22",
     "webpack-cli": "^4.9.1"
   }
 }
